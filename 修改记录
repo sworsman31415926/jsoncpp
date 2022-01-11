@@ -1,0 +1,79 @@
+2022 0111自己在工作中编译OK
+user$ make
+home/user/Documents/user/json/jsoncpp-1.8.0/src/lib_json/json_reader.cpp:1232:3: note: here
+   case '/':
+   ^~~~
+[ 22%] Building CXX object src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/json_value.cpp.o
+[ 33%] Building CXX object src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/json_writer.cpp.o
+[ 44%] Linking CXX static library libjsoncpp.a
+[ 44%] Built target jsoncpp_lib_static
+Scanning dependencies of target jsontestrunner_exe
+[ 55%] Building CXX object src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/main.cpp.o
+[ 66%] Linking CXX executable jsontestrunner_exe
+[ 66%] Built target jsontestrunner_exe
+Scanning dependencies of target jsoncpp_test
+[ 77%] Building CXX object src/test_lib_json/CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o
+[ 88%] Building CXX object src/test_lib_json/CMakeFiles/jsoncpp_test.dir/main.cpp.o
+[100%] Linking CXX executable jsoncpp_test
+Testing ValueTest/checkNormalizeFloatingPointStr: OK
+Testing ValueTest/memberCount: OK
+Testing ValueTest/objects: OK
+Testing ValueTest/arrays: OK
+Testing ValueTest/arrayIssue252: OK
+Testing ValueTest/null: OK
+Testing ValueTest/strings: OK
+Testing ValueTest/bools: OK
+Testing ValueTest/integers: OK
+Testing ValueTest/nonIntegers: OK
+Testing ValueTest/compareNull: OK
+Testing ValueTest/compareInt: OK
+Testing ValueTest/compareUInt: OK
+Testing ValueTest/compareDouble: OK
+Testing ValueTest/compareString: OK
+Testing ValueTest/compareBoolean: OK
+Testing ValueTest/compareArray: OK
+Testing ValueTest/compareObject: OK
+Testing ValueTest/compareType: OK
+Testing ValueTest/offsetAccessors: OK
+Testing ValueTest/typeChecksThrowExceptions: OK
+Testing ValueTest/StaticString: OK
+Testing ValueTest/CommentBefore: OK
+Testing ValueTest/zeroes: OK
+Testing ValueTest/zeroesInKeys: OK
+Testing ValueTest/specialFloats: OK
+Testing ValueTest/precision: OK
+Testing WriterTest/dropNullPlaceholders: OK
+Testing StreamWriterTest/dropNullPlaceholders: OK
+Testing StreamWriterTest/writeZeroes: OK
+Testing ReaderTest/parseWithNoErrors: OK
+Testing ReaderTest/parseWithNoErrorsTestingOffsets: OK
+Testing ReaderTest/parseWithOneError: OK
+Testing ReaderTest/parseChineseWithOneError: OK
+Testing ReaderTest/parseWithDetailError: OK
+Testing CharReaderTest/parseWithNoErrors: OK
+Testing CharReaderTest/parseWithNoErrorsTestingOffsets: OK
+Testing CharReaderTest/parseWithOneError: OK
+Testing CharReaderTest/parseChineseWithOneError: OK
+Testing CharReaderTest/parseWithDetailError: OK
+Testing CharReaderTest/parseWithStackLimit: OK
+Testing CharReaderStrictModeTest/dupKeys: OK
+Testing CharReaderFailIfExtraTest/issue164: OK
+Testing CharReaderFailIfExtraTest/issue107: OK
+Testing CharReaderFailIfExtraTest/commentAfterObject: OK
+Testing CharReaderFailIfExtraTest/commentAfterArray: OK
+Testing CharReaderFailIfExtraTest/commentAfterBool: OK
+Testing CharReaderAllowDropNullTest/issue178: OK
+Testing CharReaderAllowSingleQuotesTest/issue182: OK
+Testing CharReaderAllowZeroesTest/issue176: OK
+Testing CharReaderAllowSpecialFloatsTest/issue209: OK
+Testing BuilderTest/settings: OK
+Testing IteratorTest/distance: OK
+Testing IteratorTest/names: OK
+Testing IteratorTest/indexes: OK
+Testing IteratorTest/const: OK
+Testing RValueTest/moveConstruction: OK
+All 57 tests passed
+[100%] Built target jsoncpp_test
+//自己需要的静态库
+user@user-OptiPlex-7090:~/Documents/user/json/jsoncpp-1.8.0$ find -name libjsoncpp.a
+./build/src/lib_json/libjsoncpp.a
